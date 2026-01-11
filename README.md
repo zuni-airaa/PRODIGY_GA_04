@@ -19,18 +19,18 @@ By training on paired datasets, the model learns to translate input images (e.g.
 - `requirements/` → Dependencies file
 - `README.md` → Project documentation
 
-##  Setup
-Install dependencies:
-```bash
-pip install tensorflow matplotlib numpy pillow
-```
+## Workflow -
+- Install dependencies 
+- Configure Kaggle API 
+- Organize dataset - Define U-Net generator 
+- Train and save checkpoints 
+- Generate and visualize results ## Dataset Setup 
+- Download the facades dataset from [Kaggle](https://www.kaggle.com/datasets/sabahesaraki/pix2pix-facades-dataset). 
+- Place training images in `data/train/` and test images in `data/test/`. - `.gitkeep` files are placeholders to keep the folder structure visible in GitHub.
 
-Run the training script or notebook locally to train pix2pix on paired datasets.
 
-##  References
-- GeeksforGeeks: [Conditional GAN](https://www.geeksforgeeks.org/deep-learning/conditional-generative-adversarial-network/)  
-- Medium: [cGAN Explained](https://scribe.rip/cgan-conditional-generative-adversarial-network-how-to-gain-control-over-gan-outputs-b30620bd0cc8)  
-- TensorFlow: [Pix2Pix Tutorial](https://www.tensorflow.org/tutorials/generative/pix2pix)
+## Sample Output
+![output](results/samples/output_1.png)
 
 ##  Example Usage
 ```python
