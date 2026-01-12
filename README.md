@@ -11,13 +11,19 @@ By training on paired datasets, the model learns to translate input images (e.g.
 - Training with checkpoints for reproducibility
 - Example outputs showcasing translated images
 
-##  Repository Structure
-- `data/` → Paired training and testing datasets
-- `models/` → pix2pix model definitions (generator & discriminator)
-- `checkpoints/` → Saved model weights during training
-- `results/` → Generated image samples
-- `requirements/` → Dependencies file
-- `README.md` → Project documentation
+
+## Dataset Details
+
+This project uses the [Pix2Pix Facades dataset](https://www.kaggle.com/datasets/sabahesaraki/pix2pix-facades-dataset).
+
+### Folder structure
+- `data/train/` → 400 training images
+- `data/test/` → 106 testing images
+- `data/val/` → 100 validation images
+
+Each image is split into **input (left half)** and **target (right half)** for paired image‑to‑image translation tasks.  
+These folders are now included directly in the repository for reproducibility.
+
 
 ## Workflow -
 - Install dependencies 
