@@ -78,16 +78,5 @@ PRODIGY_GA_04/
 ├── data/
 │   ├── train/
 │   └── test/
-├── models/
-│   └── pix2pix.py
-├── checkpoints/
-│   └── latest/
-├── results/
-│   └── samples/
-│       ├── output_1.png
-│       ├── output_2.png
-│       └── ...
-├── requirements/
-│   └── requirements.txt
 └── README.md
 ```
